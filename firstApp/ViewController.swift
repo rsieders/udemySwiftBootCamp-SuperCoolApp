@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var hideRed: UIButton!
+    @IBOutlet var hideBlue: UIButton!
+    @IBOutlet weak var redBG: UIImageView!
+    @IBOutlet weak var blueBG: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +26,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func MakeRedDisappear(sender: AnyObject) {
+        redBG.hidden = true
+        blueBG.hidden = false
+    }
 
+    @IBAction func MakeBlueDisappear(sender: AnyObject) {
+        redBG.hidden = false
+        blueBG.hidden = true
+    }
 
 }
 
