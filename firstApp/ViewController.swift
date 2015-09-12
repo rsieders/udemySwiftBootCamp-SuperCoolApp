@@ -28,11 +28,9 @@ class ViewController: UIViewController {
     }
     @IBAction func MakeRedDisappear(sender: AnyObject) {
         redBG.hidden = true
-        blueBG.hidden = false
     }
 
     @IBAction func MakeBlueDisappear(sender: AnyObject) {
-        redBG.hidden = false
         blueBG.hidden = true
     }
 
